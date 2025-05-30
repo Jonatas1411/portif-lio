@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./Css/style.css">
-  <title>Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Jônatas Andrade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./Css/style.css" />
 </head>
+
 <body>
 
   <header>
     <h1>Portfólio</h1>
-    <div class="toggle-mode"></div>
   </header>
 
   <main>
     <div class="text">
-      <h2>Olá, eu sou o <span>Jônatas Andrade !</span></h2>
+      <h2>Olá, eu sou o <span>Jônatas Andrade!</span></h2>
       <p>Desenvolvedor Front-End - Especializado em transformar ideias em interfaces responsivas, intuitivas e de alto desempenho.</p>
       <div class="buttons">
-        <a href="https://drive.google.com/file/d/1eHX2AmP6xCVMUEtOE4tjwdOJSogRKk8h/view?usp=drive_link" class="download" target="_blank">Download CV</a>
-        <a href="https://wa.me/5575991868798" class="contact" target="_blank">Entrar em contato</a>
+        <a href="https://drive.google.com/file/d/1eHX2AmP6xCVMUEtOE4tjwdOJSogRKk8h/view?usp=drive_link" class="download" target="_blank" rel="noopener noreferrer">Download CV</a>
+        <a href="https://wa.me/5575991868798" class="contact" target="_blank" rel="noopener noreferrer">Entrar em contato</a>
       </div>
     </div>
     <div class="image">
-      <img src="./assets/perfil.jpeg" alt="Minha Foto">
+      <img src="./assets/perfil.jpeg" alt="Minha Foto" />
     </div>
   </main>
 
-  <section class="projects">
-    <div class="project-card">
-      <img src="./assets/imc.png" alt="Calculadora de IMC">
-      <h3>Calculadora de IMC</h3>
-      <p>A nossa calculadora de IMC (Índice de Massa Corporal) é uma ferramenta prática e fácil de usar para ajudá-lo a monitorar sua saúde e bem-estar.</p>
-      <p>Ela calcula rapidamente o seu IMC com base no seu peso e altura, oferecendo uma indicação do seu estado nutricional.</p>
-      <p>O IMC é uma medida amplamente utilizada para verificar se o seu peso está dentro de uma faixa saudável.</p>
-      <p>Lembre-se de que essa é apenas uma referência, e para uma avaliação completa, sempre consulte um profissional de saúde.</p>
-      <a class="site" href="https://calculadora-imc-gold-psi.vercel.app" target="_blank">Ver site</a>
+  <section class="projects-section" aria-label="Projetos">
+    <h2>Projetos</h2>
+    <div class="projects-grid">
+      <article class="project-card" tabindex="0">
+        <img src="./assets/imc.png" alt="Ícone Calculadora de IMC" />
+        <h3>Calculadora de IMC</h3>
+        <p>Ferramenta prática para calcular seu Índice de Massa Corporal com base no peso e altura, ajudando a monitorar seu estado nutricional.</p>
+        <a class="site" href="https://calculadora-imc-gold-psi.vercel.app" target="_blank" rel="noopener noreferrer">Ver site</a>
+      </article>
+
+      <article class="project-card" tabindex="0">
+        <img src="./assets/relogio-digital.png" alt="Ícone Relógio Digital" />
+        <h3>Relógio Digital</h3>
+        <p>Relógio digital em tempo real usando JavaScript puro para exibir horas, minutos e segundos com interface moderna e responsiva.</p>
+        <a class="site" href="https://r-logio-digital.vercel.app" target="_blank" rel="noopener noreferrer">Ver site</a>
+      </article>
+
+      <article class="project-card" tabindex="0">
+        <img src="./assets/senha.png" alt="Ícone Gerador de Senhas" />
+        <h3>Gerador de Senhas</h3>
+        <p>Projeto criado com HTML, CSS e JavaScript para gerar senhas seguras e personalizadas, facilitando a criação de credenciais fortes para o usuário.</p>
+        <a class="site" href="https://seusite.com/gerador-senhas" target="_blank" rel="noopener noreferrer">Ver site</a>
+      </article>
     </div>
   </section>
 
-  <!-- Ícones sociais -->
   <div class="social-icons">
-    <a href="https://github.com/Jonatas1411" target="_blank">
-      <img src="./assets/github.png" class="github" alt="GitHub">
+    <a href="https://github.com/Jonatas1411" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <img src="./assets/github.png" class="github" alt="GitHub" />
     </a>
-    <a href="https://www.linkedin.com" target="_blank">
-      <img src="./assets/linkedin.png" class="linkedin" alt="LinkedIn">
+    <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <img src="./assets/linkedin.png" class="linkedin" alt="LinkedIn" />
     </a>
   </div>
 
+  <script src="./script.js"></script>
 </body>
+
 </html>
